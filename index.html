@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/calculator.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="led">
+			<p id="led">0</p>
+		</div>
+		<div class="buttons">
+			<div class="line">
+				<div class="c" onclick="clearCalc()"><p>C</p></div>
+				<div class="button operation" onclick="invertSignal()"><p>+/-</p></div>
+				<div class="button operator" onclick="addOperator('/')"><p>:</p></div>
+			</div>
+			<div class="line">
+				<div class="button number" onclick="addNumber(7)"><p>7</p></div>
+				<div class="button number" onclick="addNumber(8)"><p>8</p></div>
+				<div class="button number" onclick="addNumber(9)"><p>9</p></div>
+				<div class="button operator" onclick="addOperator('*')"><p>x</p></div>
+			</div>
+			<div class="line">
+				<div class="button number" onclick="addNumber(4)"><p>4</p></div>
+				<div class="button number" onclick="addNumber(5)"><p>5</p></div>
+				<div class="button number" onclick="addNumber(6)"><p>6</p></div>
+				<div class="button operator" onclick="addOperator('-')"><p>-</p></div>
+			</div>
+			<div class="line">
+				<div class="button number" onclick="addNumber(1)"><p>1</p></div>
+				<div class="button number" onclick="addNumber(2)"><p>2</p></div>
+				<div class="button number" onclick="addNumber(3)"><p>3</p></div>
+				<div class="button operator" onclick="addOperator('+')"><p>+</p></div>
+			</div>
+			<div class="line">
+				<div class="zero" onclick="addNumber(0)"><p>0</p></div>
+				<div class="button number" onclick="addComma()"><p>.</p></div>
+				<div class="button operator" onclick="equals()"><p>=</p></div>
+			</div>
+		</div>
+		<div class="image">
+			<h1>This calculator has been developed by the <b>DevLoopers</b> team.</h1>
+			<img src="img/logo.png" alt="DevLoopers">
+		</div>
+	</div>
+</body>
+</html>

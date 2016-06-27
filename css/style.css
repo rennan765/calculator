@@ -1,0 +1,176 @@
+/* ESTRUTURA */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+html,body{
+	position: relative;
+	height: 100%
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.fontzero{
+	font-size: 0em;
+	float: left;
+}
+
+/* CONTAINER */
+
+.container{
+	width: 1366px;
+	height: 700px;
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+/* DISPLAY */
+
+.led{
+	width: 1366px;
+	height: 200px;
+	background-color: black;
+	box-sizing: border-box;
+	border: solid 1px black;
+}
+
+.led p{
+	padding: 40px 0 0 5px;
+	text-decoration: none;
+	font-size: 6em;
+	color: white;
+}
+
+/* BUTTONS */
+
+.buttons{
+	width: 400px;
+	height: 500px;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	font-size: 3em;
+	color: black;
+
+}
+
+.buttons .line{
+	width: 400px;
+	height: 100px;
+	box-sizing: border-box;
+}
+
+.buttons .line .button{
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: solid 1px black;
+	position: relative;
+	float: left;
+}
+.buttons .line .button p{
+	padding-top: 15px;
+}
+
+.buttons .line .c{
+	width: 200px;
+	height: 100px;
+	box-sizing: border-box;
+	border: solid 1px black;
+	position: relative;
+	float: left;
+	background-color: #808080;
+}
+
+.buttons .line .c:hover{
+	background-color: #A9A9A9;
+}
+
+.buttons .line .c p{
+	padding-top: 16px;
+}
+
+.buttons .line .operation{
+	background-color: #808080;
+}
+
+.buttons .line .operation:hover{
+	background-color: #A9A9A9;
+}
+
+.buttons .line .operator{
+	background-color: #FF8C00;
+}
+
+.buttons .line .operator:hover{
+	background-color: #FFA500;
+}
+
+.buttons .line .number{
+	background-color: #C0C0C0;
+}
+
+.buttons .line .number:hover{
+	background-color: #D3D3D3;
+}
+
+.buttons .line .zero{
+	width: 200px;
+	height: 100px;
+	box-sizing: border-box;
+	border: solid 1px black;
+	position: relative;
+	float: left;
+	background-color: #C0C0C0;
+}
+
+.buttons .line .zero:hover{
+	background-color: #D3D3D3;
+}
+
+.buttons .line .zero p{
+	padding-top: 16px;
+}
+
+/* IMAGE */
+
+.image{
+	width: 966px;
+	height: 500px;
+	box-sizing: border-box;
+	border: solid 1px black;
+	position: relative;
+	float: left;
+	background-color: #E1E1E1;
+	font-family: 'Lato', sans-serif;
+}
+
+.image h1{
+	padding: 25px 0 25px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2em;
+	color: #006F93;
+}
+
+.image h1 b{
+	font-weight: bolder;
+}
+
+.image img{
+	width: 42%;
+	display: block;
+	margin: 0 auto;
+	padding: 25px;
+}
