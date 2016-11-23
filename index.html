@@ -6,47 +6,101 @@
 	<title>Calculadora</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/calculator.js"></script>
 </head>
 <body>
+	<header>
+		<h1 class="fontzero">DevLoopers' calculator</h1>
+	</header>
 	<div class="container">
 		<div class="led">
+			<h2 class="fontzero">LED</h2>
 			<p id="led">0</p>
 		</div>
 		<div class="buttons">
+			<h2 class="fontzero">Buttons</h2>
 			<div class="line">
-				<div class="c" onclick="clearCalc()"><p>C</p></div>
-				<div class="button operation" onclick="invertSignal()"><p>+/-</p></div>
-				<div class="button operator" onclick="addOperator('/')"><p>:</p></div>
+				<div class="c" id="operationC" onclick="clearCalc()" onmouseover="buttonHoverIn('operationC')" onmouseout="buttonHoverOut('operationC')"><p>C</p></div>
+				<div class="button operation" id="operationSignal" onclick="invertSignal()" onmouseover="buttonHoverIn('operationSignal')" onmouseout="buttonHoverOut('operationSignal')"><p>+/-</p></div>
+				<div class="button operator" id="operatorDivided" onclick="addOperator('/')" onmouseover="buttonHoverIn('operatorDivided')" onmouseout="buttonHoverOut('operatorDivided')"><p>:</p></div>
 			</div>
 			<div class="line">
-				<div class="button number" onclick="addNumber(7)"><p>7</p></div>
-				<div class="button number" onclick="addNumber(8)"><p>8</p></div>
-				<div class="button number" onclick="addNumber(9)"><p>9</p></div>
-				<div class="button operator" onclick="addOperator('*')"><p>x</p></div>
+				<div class="button number" id="number7" onclick="addNumber(7)" onmouseover="buttonHoverIn('number7')" onmouseout="buttonHoverOut('number7')"><p>7</p></div>
+				<div class="button number" id="number8" onclick="addNumber(8)" onmouseover="buttonHoverIn('number8')" onmouseout="buttonHoverOut('number8')"><p>8</p></div>
+				<div class="button number" id="number9" onclick="addNumber(9)" onmouseover="buttonHoverIn('number9')" onmouseout="buttonHoverOut('number9')"><p>9</p></div>
+				<div class="button operator" id="operatorTimes" onclick="addOperator('*')" onmouseover="buttonHoverIn('operatorTimes')" onmouseout="buttonHoverOut('operatorTimes')"><p>x</p></div>
 			</div>
 			<div class="line">
-				<div class="button number" onclick="addNumber(4)"><p>4</p></div>
-				<div class="button number" onclick="addNumber(5)"><p>5</p></div>
-				<div class="button number" onclick="addNumber(6)"><p>6</p></div>
-				<div class="button operator" onclick="addOperator('-')"><p>-</p></div>
+				<div class="button number" id="number4" onclick="addNumber(4)" onmouseover="buttonHoverIn('number4')" onmouseout="buttonHoverOut('number4')"><p>4</p></div>
+				<div class="button number" id="number5" onclick="addNumber(5)" onmouseover="buttonHoverIn('number5')" onmouseout="buttonHoverOut('number5')"><p>5</p></div>
+				<div class="button number" id="number6" onclick="addNumber(6)" onmouseover="buttonHoverIn('number6')" onmouseout="buttonHoverOut('number6')"><p>6</p></div>
+				<div class="button operator" id="operatorMinus" onclick="addOperator('-')" onmouseover="buttonHoverIn('operatorMinus')" onmouseout="buttonHoverOut('operatorMinus')"><p>-</p></div>
 			</div>
 			<div class="line">
-				<div class="button number" onclick="addNumber(1)"><p>1</p></div>
-				<div class="button number" onclick="addNumber(2)"><p>2</p></div>
-				<div class="button number" onclick="addNumber(3)"><p>3</p></div>
-				<div class="button operator" onclick="addOperator('+')"><p>+</p></div>
+				<div class="button number" id="number1" onclick="addNumber(1)" onmouseover="buttonHoverIn('number1')" onmouseout="buttonHoverOut('number1')"><p>1</p></div>
+				<div class="button number" id="number2" onclick="addNumber(2)" onmouseover="buttonHoverIn('number2')" onmouseout="buttonHoverOut('number2')"><p>2</p></div>
+				<div class="button number" id="number3" onclick="addNumber(3)" onmouseover="buttonHoverIn('number3')" onmouseout="buttonHoverOut('number3')"><p>3</p></div>
+				<div class="button operator" id="operatorPlus" onclick="addOperator('+')" onmouseover="buttonHoverIn('operatorPlus')" onmouseout="buttonHoverOut('operatorPlus')"><p>+</p></div>
 			</div>
 			<div class="line">
-				<div class="zero" onclick="addNumber(0)"><p>0</p></div>
-				<div class="button number" onclick="addComma()"><p>.</p></div>
-				<div class="button operator" onclick="equals()"><p>=</p></div>
+				<div class="zero" id="number0" onclick="addNumber(0)" onmouseover="buttonHoverIn('number0')" onmouseout="buttonHoverOut('number0')"><p>0</p></div>
+				<div class="button number" id="numberComma" onclick="addComma()" onmouseover="buttonHoverIn('numberComma')" onmouseout="buttonHoverOut('numberComma')"><p>.</p></div>
+				<div class="button operator" id="operatorEquals" onclick="equals()" onmouseover="buttonHoverIn('operatorEquals')" onmouseout="buttonHoverOut('operatorEquals')"><p>=</p></div>
 			</div>
 		</div>
-		<div class="image">
-			<h1>This calculator has been developed by the <b>DevLoopers</b> team.</h1>
-			<img src="img/logo.png" alt="DevLoopers">
+		<div class="containerColor">
+			<div class="changeColorApp">
+				<h2>You can customise the calculator!</h2>
+				<div class="custom">
+					<h3>You can choose the button colors...</h3>
+					<p>Operations:</p>
+					<div class="changeColorButtons">
+						<div class="containerButtons">
+							<button class="gray" onclick="changeOperationColor('gray')"></button>
+							<button class="lightGray" onclick="changeOperationColor('lgray')"></button>
+							<button class="orange" onclick="changeOperationColor('orange')"></button>
+							<button class="red" onclick="changeOperationColor('red')"></button>
+							<button class="yellow" onclick="changeOperationColor('yellow')"></button>
+							<button class="blue" onclick="changeOperationColor('blue')"></button>
+						</div>
+					</div>
+					<p>Operators:</p>
+					<div class="changeColorButtons">
+						<div class="containerButtons">
+							<button class="gray" onclick="changeOperatorColor('gray')"></button>
+							<button class="lightGray" onclick="changeOperatorColor('lgray')"></button>
+							<button class="orange" onclick="changeOperatorColor('orange')"></button>
+							<button class="red" onclick="changeOperatorColor('red')"></button>
+							<button class="yellow" onclick="changeOperatorColor('yellow')"></button>
+							<button class="blue" onclick="changeOperatorColor('blue')"></button>
+						</div>
+					</div>
+					<p>Numbers:</p>
+					<div class="changeColorButtons">
+						<div class="containerButtons">
+							<button class="gray" onclick="changeNumberColor('gray')"></button>
+							<button class="lightGray" onclick="changeNumberColor('lgray')"></button>
+							<button class="orange" onclick="changeNumberColor('orange')"></button>
+							<button class="red" onclick="changeNumberColor('red')"></button>
+							<button class="yellow" onclick="changeNumberColor('yellow')"></button>
+							<button class="blue" onclick="changeNumberColor('blue')"></button>
+						</div>
+					</div>
+				</div>
+				<div class="style">
+					<h3>or you can choose a pre-organized color scheme.</h3>
+					<button id="iOS" onclick="changeColorScheme('iOS')">iOS's calculator-like style</button>
+					<button id="devLoopers" onclick="changeColorScheme('DevLoopers')">DevLoopers logo-like stye</button>
+				</div>
+			</div>
+			<footer>
+				<a href="http://www.devloopers.com.br" alt="Developed by DevLoopers" target="_blank">
+					<img src="img/logo.png" alt="DevLoopers">
+					<h2>This app has been developed by the DevLoopers team.</h1>
+				</a>
+			</footer>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/calculatorApp.js"></script>
+	<script type="text/javascript" src="js/changeColorApp.js"></script>
 </body>
 </html>

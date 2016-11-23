@@ -1,4 +1,4 @@
-/* ESTRUTURA */
+/* STRUCT */
 
 *{
 	margin: 0;
@@ -62,7 +62,7 @@ p{
 	text-align: center;
 	font-size: 3em;
 	color: black;
-
+	cursor: pointer;
 }
 
 .buttons .line{
@@ -90,11 +90,11 @@ p{
 	border: solid 1px black;
 	position: relative;
 	float: left;
-	background-color: #808080;
+	background-color: #E1140B;
 }
 
 .buttons .line .c:hover{
-	background-color: #A9A9A9;
+	background-color: #E83E36;
 }
 
 .buttons .line .c p{
@@ -102,27 +102,27 @@ p{
 }
 
 .buttons .line .operation{
-	background-color: #808080;
+	background-color: #E1140B;
 }
 
 .buttons .line .operation:hover{
-	background-color: #A9A9A9;
+	background-color: #E83E36;
 }
 
 .buttons .line .operator{
-	background-color: #FF8C00;
+	background-color: #FEEB23;
 }
 
 .buttons .line .operator:hover{
-	background-color: #FFA500;
+	background-color: #FFF053;
 }
 
 .buttons .line .number{
-	background-color: #C0C0C0;
+	background-color: #5093D7;
 }
 
 .buttons .line .number:hover{
-	background-color: #D3D3D3;
+	background-color: #72A3D4;
 }
 
 .buttons .line .zero{
@@ -132,20 +132,20 @@ p{
 	border: solid 1px black;
 	position: relative;
 	float: left;
-	background-color: #C0C0C0;
+	background-color: #5093D7;
 }
 
 .buttons .line .zero:hover{
-	background-color: #D3D3D3;
+	background-color: #72A3D4;
 }
 
 .buttons .line .zero p{
 	padding-top: 16px;
 }
 
-/* IMAGE */
+/* CHANGE COLOR APP */
 
-.image{
+.containerColor{
 	width: 966px;
 	height: 500px;
 	box-sizing: border-box;
@@ -156,21 +156,194 @@ p{
 	font-family: 'Lato', sans-serif;
 }
 
-.image h1{
-	padding: 25px 0 25px 0;
+.containerColor .changeColorApp{
+	width: 966px;
+	height: 300px;
+	box-sizing: border-box;
+} 
+
+.containerColor .changeColorApp h2{
+	width: 966px;
+	height: 35px;
+	padding: 10px 0 5px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.7em;
+	color: #006F93;
+}
+
+/* CUSTOMISE EACH BUTTON */
+
+.containerColor .changeColorApp .custom{
+	width: 483px;
+	height: 250px;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+}
+
+.containerColor .changeColorApp .custom h3{
+	width: 483px;
+	padding: 10px 0 10px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.2em;
+	color: #006F93;
+}
+
+.containerColor .changeColorApp .custom p{
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	margin-left: 83.5px;
+	padding: 10px 0 10px 0;
+	font-size: 1em;
+	color: #006F93;
+}
+
+.container .changeColorApp .custom select{
+	width: 250px;
+	margin: 0 83.5px 0 83px;
+}
+
+/* PRE-ORGANIZED COLOR SCHEME */
+
+.containerColor .changeColorApp .custom .changeColorButtons{
+	width: 483px;
+	height: 18px;
+	box-sizing: border-box;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons{
+	width: 250px;
+	height: 18px;
+	box-sizing: border-box;
+	margin-left: 85px;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button{
+	width: 16px;
+	height: 18px;
+	box-sizing: border-box;
+	border-style: none;
+	border: solid 1px;
+
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.gray{
+	background-color: #808080;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.gray:hover{
+	background-color: #A9A9A9;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.lightGray{
+	background-color: #A9A9A9;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.lightGray:hover{
+	background-color: #D3D3D3;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.orange{
+	background-color: #FF8C00;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.orange:hover{
+	background-color: #FF8C00;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.red{
+	background-color: #E1140B;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.red:hover{
+	background-color: #E83E36;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.yellow{
+	background-color: #FEEB23;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.yellow:hover{
+	background-color: #FFF053;
+}
+
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.blue{
+	background-color: #5093D7;
+}
+.containerColor .changeColorApp .custom .changeColorButtons .containerButtons button.blue:hover{
+	background-color: #72A3D4;
+}
+
+.containerColor .changeColorApp .style{
+	width: 483px;
+	height: 250px;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+}
+
+.containerColor .changeColorApp .style h3{
+	width: 483px;
+	padding: 10px 0 10px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.2em;
+	color: #006F93;
+}
+
+.containerColor .changeColorApp .style button{
+	width: 300px;
+	height: 25px;
+	margin: 35px 91.5px 25px 91.5px;
+	box-sizing: border-box;
+	border-style: none;
+	border: black solid 1px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-style: bold;
+}
+
+.containerColor .changeColorApp .style button#iOS{
+	background-color: #808080;
+	color: white;
+}
+
+.containerColor .changeColorApp .style button#iOS:hover{
+	background-color: #A9A9A9;
+}
+
+.containerColor .changeColorApp .style button#devLoopers{
+	background-color: #5093D7;
+	color: white;
+}
+
+.containerColor .changeColorApp .style button#devLoopers:hover{
+	background-color: #72A3D4;
+}
+
+/* FOOTER */
+
+.containerColor footer{
+	width: 966px;
+	height: 200px;
+	box-sizing: border-box;
+}
+
+.containerColor footer img{
+	width: 228.047px;
+	height: 190px;
+	margin: 5px 10px;
+	position: relative;
+	float: left;
+}
+
+.containerColor footer h2{
+	width: 700px;
+	height: 80px;
+	display: block;
+	margin: 0 auto;
+	padding: 60px 0;
+	position: relative;
+	float: left;
 	text-decoration: none;
 	text-align: center;
 	font-size: 2em;
 	color: #006F93;
-}
-
-.image h1 b{
-	font-weight: bolder;
-}
-
-.image img{
-	width: 42%;
-	display: block;
-	margin: 0 auto;
-	padding: 25px;
 }
